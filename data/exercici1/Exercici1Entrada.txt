@@ -1,0 +1,10 @@
+Abans d'obrir un fitxer, comprova que existeix i que tens permís per llegir-lo.
+Indica sempre la codificació: UTF-8 evita sorpreses amb accents, dièresis i ç.
+Tanca els recursos amb try-with-resources, fins i tot quan hi ha una excepció.
+No construeixis rutes amb barres invertides: fes servir File o Path perquè siguin portables.
+Llegeix línia a línia els fitxers grans en lloc de carregar-los sencers a memòria.
+Un fitxer binari no es pot llegir com a text: cal conèixer l'ordre i el tipus de cada dada.
+Captura les excepcions d'entrada i sortida i mostra un missatge útil a qui executa el programa.
+Escriu en un fitxer temporal i reanomena'l al final si no vols deixar dades a mitges.
+L'XML i el JSON són text: valida'n l'estructura abans de confiar en el contingut.
+Prova el codi amb fitxers buits, amb línies en blanc i amb caràcters poc habituals com ï o ü.

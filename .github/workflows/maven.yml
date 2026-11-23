@@ -1,0 +1,35 @@
+# Comprova que el repositori base compila a cada push i pull request.
+# Els tests també s'executen, però no fan fallar la comprovació: al repositori
+# base fallen tots fins que s'implementen els mètodes dels exercicis.
+name: Compilació
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descarrega el codi
+        uses: actions/checkout@v4
+
+      - name: Configura Java 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+          cache: maven
+
+      - name: Compila el codi i els tests
+        run: mvn -B -DskipTests test-compile
+
+      - name: Passa els tests (informatiu)
+        run: mvn -B test
+        continue-on-error: true

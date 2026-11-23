@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<videojocs>
+    <videojoc any="1985" plataforma="NES">
+        <titol>Super Mario Bros.</titol>
+        <genere>Plataformes</genere>
+    </videojoc>
+    <videojoc any="2011" plataforma="PC">
+        <titol>Portal 2</titol>
+        <genere>Puzle</genere>
+    </videojoc>
+    <videojoc any="2017" plataforma="Switch">
+        <titol>The Legend of Zelda: Breath of the Wild</titol>
+        <genere>Aventura</genere>
+    </videojoc>
+    <videojoc any="2017" plataforma="PC">
+        <titol>Hollow Knight</titol>
+        <genere>Metroidvania</genere>
+    </videojoc>
+    <videojoc any="2018" plataforma="PC">
+        <titol>Celeste</titol>
+        <genere>Plataformes</genere>
+    </videojoc>
+</videojocs>
